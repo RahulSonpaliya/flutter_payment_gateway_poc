@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_payment_gateway_poc/stripe/stripe_card_widget_payment_screen.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
+
+import 'razorpay/razorpay_checkout_page_demo.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const StripeCardWidgetPaymentScreen(),
+      home: const RazorPayCheckoutPageDemo(),
     );
   }
 }
